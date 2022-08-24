@@ -46,6 +46,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.hbb20.CountryCodePicker
+                android:id="@+id/countryPicker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:ccpDialog_textColor="#534f69"
@@ -53,11 +54,23 @@
                 app:ccp_defaultNameCode="EG"
                 app:ccp_showFullName="false"
                 app:ccp_showNameCode="false"
-                app:ccp_showPhoneCode="true" />
+                app:ccp_showPhoneCode="false" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:editable="false"
+                android:focusable="false"
+                android:textColor="#534f69" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
                 android:background="@null"
                 android:inputType="phone"
                 android:maxLength="10"
